@@ -1,0 +1,15 @@
+pandas
+
+setuptools
+
+
+
+scikit-learn
+numpy
+
+xgboost
+flask
+
+certifi
+
+pymongo

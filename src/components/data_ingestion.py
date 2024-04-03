@@ -38,7 +38,7 @@ class DataIngestion:
             collection = mongo_client[db_name][coll_name]
         
             df = pd.DataFrame(list(collection.find()))
-           
+            print(df)
             if "_id" in df.columns.to_list():
                 df = df.drop(columns=["_id"], axis=1)
                 
@@ -79,6 +79,4 @@ class DataIngestion:
         
         return file_path
        
-
-
 

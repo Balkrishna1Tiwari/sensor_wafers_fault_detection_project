@@ -1,5 +1,4 @@
 name: workflow
-
 on:
   push:
     branches:
@@ -19,6 +18,11 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v3
 
+      - name: Set up Node.js 20.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: '20.x'
+
       - name: Lint code
         run: echo "Linting repository"
 
@@ -32,6 +36,11 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
+
+      - name: Set up Node.js 20.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: '20.x'
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
@@ -49,8 +58,5 @@ jobs:
         env:
           IMAGE_TAG: latest
         run: |
-          # Build a docker container and
-          # push it to ECR so that it can
-          # be deployed to ECS.
           docker build -t ${{ secrets.AWS_ECR_REPO_URI }}:$IMAGE_TAG .
           docker push ${{ secrets.AWS_ECR_REPO_URI }}:$IMAGE_TAG

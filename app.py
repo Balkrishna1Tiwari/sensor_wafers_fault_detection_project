@@ -3,9 +3,9 @@ from flask import Flask, render_template, jsonify, request, send_file
 import os
 import sys
 from src.exception import CustomException
-sys.path.append(r"C:\Users\balkr\big_project\src\pipeline")
-from training_pipeline import TrainingPipeline
-from prediction_pipeline import PredictionPipeline
+
+from src.pipeline.training_pipeline import TrainingPipeline
+from src.pipeline.prediction_pipeline import PredictionPipeline
 from src.logg import logging
 app=Flask(__name__)
 

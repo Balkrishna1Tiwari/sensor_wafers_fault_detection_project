@@ -4,9 +4,8 @@ import sys
 import certifi
 import pymongo
 
-sys.path.append(r'C:\Users\balkr\big_project\src\pipeline\constant')
+from src.constant .db_info import*
 
-from db_info import*
 
 from src.exception import*
 

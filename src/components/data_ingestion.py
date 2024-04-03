@@ -2,8 +2,7 @@ import pandas as pd
 import os
 import sys
 from pymongo import *
-sys.path.append(r'C:\Users\balkr\big_project\src\pipeline\constant')
-from db_info import*
+from src.constant.db_info import*
 import sys
 import os
 import numpy as np

@@ -1,6 +1,6 @@
 import sys,os
-sys.path.append(r'C:\Users\balkr\big_project\src\components')
-from data_ingestion import DataIngestion
+
+from src.components.data_ingestion import DataIngestion
 from src.components.data_transformation import DataTransformation
 from src.components.model_trainer import Model_Trainer
 

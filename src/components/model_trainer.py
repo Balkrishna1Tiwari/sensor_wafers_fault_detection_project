@@ -1,6 +1,6 @@
 import sys
-sys.path.append(r"C:\Users\balkr\big_project\src\utils")
-from main_utils import MainUtils
+
+from src.utils.main_utils import MainUtils
 import sys
 import warnings
 warnings.filterwarnings('ignore')
@@ -162,11 +162,10 @@ class Model_Trainer:
 
             return self.model_path_file.model_path
         
-        
         except Exception as e:
             raise CustomException(str(e),sys)
     
-
+# v
 
 
 

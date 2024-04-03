@@ -1,7 +1,7 @@
 import sys
 
 from src.utils.main_utils import MainUtils
-import sys
+# 
 import warnings
 warnings.filterwarnings('ignore')
 from dataclasses import dataclass
@@ -19,12 +19,13 @@ from xgboost import XGBClassifier
 from sklearn.model_selection import GridSearchCV,train_test_split
 from src.exception import CustomException
 from src.logg import logging
+
 @dataclass
 class ModelConfiguration:
     
     model_path=os.path.join('artifacts','model.pkl')
     
-    yml=r"C:\Users\balkr\big_project\confi_yaml\model.yaml"
+    yml= os.path.join('confi_yaml','model.yml')
     
 class Model_Trainer:
     
@@ -166,7 +167,6 @@ class Model_Trainer:
             raise CustomException(str(e),sys)
     
 # v
-
 
 
 

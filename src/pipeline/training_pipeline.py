@@ -70,7 +70,7 @@ class TrainingPipeline:
             x_train,y_train,x_test,y_test,preprocessor=self.start_data_trandformation(path)
         
             self.start_model_training(x_train,y_train,x_test,y_test)
-            
+           
         except Exception as e:
             
             

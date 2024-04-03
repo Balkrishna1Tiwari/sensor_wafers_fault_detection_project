@@ -45,3 +45,6 @@ def upload():
 if __name__=="__main__":
 
     app.run(host="0.0.0.0", port=5000, debug= True)
+    
+# git pull origin <branch_name>
+# git push origin main

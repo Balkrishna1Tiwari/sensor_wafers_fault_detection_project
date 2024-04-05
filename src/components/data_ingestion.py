@@ -78,6 +78,3 @@ class DataIngestion:
         
         return file_path
        
-
-# x=DataIngestion()
-# x.initiate_data_ingestion()

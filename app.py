@@ -18,7 +18,7 @@ def train_route():
     train.run_pipeline()
     return 'training completed'
 
-@app.route('/predict',methods=['GET','POST'])
+@app.route('/predict_balkrishna',methods=['GET','POST'])
 
 def upload():
     try:
@@ -46,5 +46,3 @@ if __name__=="__main__":
 
     app.run(host="0.0.0.0", port=5000, debug= True)
     
-# git pull origin <branch_name>
-# git push origin main

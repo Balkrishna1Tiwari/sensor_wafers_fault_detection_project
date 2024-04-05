@@ -46,3 +46,8 @@ if __name__=="__main__":
 
     app.run(host="0.0.0.0", port=5000, debug= True)
     
+# git remote add origin https://github.com/Balkrishna1Tiwari/sensor_wafers_fault_detection_project
+# git branch -M main
+# git push -u origin main
+
+# hoi jknkjbhkbkhgkhbgh
